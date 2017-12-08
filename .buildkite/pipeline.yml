@@ -6,3 +6,8 @@ steps:
 
   - label: Building something...
     command: mkdir -p out/ && .buildkite/build_something.sh && docker container prune -f
+
+  - wait
+
+  - label: Uploading artifacts...
+    command: .buildkite/setup_and_upload_artifacts.sh

@@ -6,9 +6,7 @@ RUN apt-get install -y software-properties-common python2.7 python3.5 python-pip
 COPY . /magicrepo
 VOLUME /magicrepodist/
 
-ENV PIP="/virtenv/bin/pip"
-ENV PYTHON="/virtenv/bin/python"
-
 RUN pip install virtualenv && virtualenv /virtenv --python=python3.5
+ENV PATH=/virtenv/bin:$PATH
 
-CMD cd /magicrepo && pip install -r requirements.txt && cp /magicrepo/dist/* /magicrepodist/
+CMD cd /magicrepo && pip install -r requirements.txt && make dist && cp /magicrepo/dist/* /magicrepodist/

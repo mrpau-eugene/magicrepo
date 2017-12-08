@@ -7,3 +7,6 @@ dockerenvbuild:
 
 dockerenvdist:
 	docker run -v $$PWD/out:/magicrepodist mrpau:latest
+
+dist:
+	python make_something.py
