@@ -19,10 +19,10 @@ echo "Now executing upload artifacts script..."
 mkdir -p dist
 mkdir- p installer
 
-buildkite-agent download 'out/*.pex' dist/
-buildkite-agent download 'out/*.whl' dist/
-buildkite-agent download 'out/*.zip' dist/
-buildkite-agent download 'out/*.gz' dist/
-buildkite-agent download 'out/installer/*.exe' installer/
+buildkite-agent download 'dist/*.pex' dist/
+buildkite-agent download 'dist/*.whl' dist/
+buildkite-agent download 'dist/*.zip' dist/
+buildkite-agent download 'dist/*.gz' dist/
+buildkite-agent download 'dist/installer/*.exe' installer/
 
 $PYTHON_CMD
