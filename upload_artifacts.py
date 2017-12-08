@@ -25,7 +25,6 @@ from github3 import login
 logging.getLogger().setLevel(logging.INFO)
 
 ACCESS_TOKEN = os.getenv("GITHUB_ACCESS_TOKEN")
-ACCESS_TOKEN = "b7279d647fb8fc926b195be9ac52b676337f9101" # Delete this after...
 REPO_OWNER = "mrpau-eugene"
 REPO_NAME = "magicrepo"
 ISSUE_ID = os.getenv("BUILDKITE_PULL_REQUEST")
@@ -108,8 +107,6 @@ def create_status_report_html(artifacts):
         html += "<p>{description}: <a href='{media_url}'>{name}</a></p>\n".format(**artifact)
         
     html += "</body>\n</html>"
-    print(html)
-
     return html
 
 def create_github_status(report_url):

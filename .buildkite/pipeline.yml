@@ -1,0 +1,8 @@
+steps:
+  - label: Build docker environment...
+    command: make dockerenvbuild
+  
+  - wait
+
+  - label: Building something...
+    command: mkdir -p out/ && .buildkite/build_something.sh && docker container prune -f
