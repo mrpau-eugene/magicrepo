@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:latest
 
 RUN apt-get -y update
 RUN apt-get install -y software-properties-common python2.7 python3.5 python-pip git curl
