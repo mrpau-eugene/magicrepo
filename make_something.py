@@ -1,13 +1,15 @@
+import os
+
 def touch(file):
-    with open(file, 'a') as f:
-        f.write('something...')
+    with open(file, 'w'):
+        pass
 
 def write_python_packages():
-    touch(os.path.join('out', 'dist', 'a.pex'))
-    touch(os.path.join('out', 'dist', 'a.zip'))
-    touch(os.path.join('out', 'dist', 'a.gz'))
-    touch(os.path.join('out', 'dist', 'a.whl'))
-    touch(os.path.join('out', 'dist', 'a.pex'))
+    touch(os.path.join('out', 'a.pex'))
+    touch(os.path.join('out', 'a.zip'))
+    touch(os.path.join('out', 'a.gz'))
+    touch(os.path.join('out', 'a.whl'))
+    touch(os.path.join('out', 'a.pex'))
 
 def write_installers():
     touch(os.path.join('out', 'installer', 'a.exe'))

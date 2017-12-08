@@ -37,7 +37,6 @@ PROJECT_PATH = os.path.join(os.getcwd())
 
 # Python packages artifact location
 DIST_DIR = os.path.join(PROJECT_PATH, "dist")
-
 # Installer artifact location
 INSTALLER_DIR = os.path.join(PROJECT_PATH, "installer")
 
