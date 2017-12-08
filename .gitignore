@@ -1,0 +1,106 @@
+# Ignore this
+# File created by Coverage
+.coverage
+
+# PyCharm
+.idea
+
+# Eclipse
+.project
+.pydevproject
+
+# Database templates
+kalite/database
+
+# setup.py
+dist/
+build/
+*.egg-info/
+# Created during make dist
+.kalite_dist_tmp
+
+# Static builds with setup.py [command] --static
+.pip-temp/
+.pip-downloads/
+.kalite/packages/dist/
+
+# Created by Selenium / Firefox
+geckodriver.log
+
+# User cache data generated at runtime
+cache/
+
+# Updates downloaded at runtime
+static-updates
+
+# MAC stuff
+.DS_Store
+
+# oh-my-zsh
+.venv
+
+# Not sure
+*.patch
+*.pid
+*.prof
+
+# Python compiling
+*.pyc
+*.pyo
+
+# Backup files
+*~
+
+# Sublime editor
+*.sublime-*
+
+# Documentation
+docs/_build
+docs/images/*
+kalite/static-libraries/docs
+
+# oh-my-zsh convention for automatically
+# switching on a venv
+.venv
+venv/
+
+# Ignore built javascript files
+/kalite/*/static/js/*/bundles
+
+# Ignore changes to Perseus and Khan Exercises that do not come from intentional edits
+/kalite/distributed/static/js/distributed/perseus
+
+# Ignore django-reverse-js file that gets copied during testing.
+kalite/distributed/static/django_js_reverse/js/reverse.js
+
+# Lacks documentation
+node_modules/
+tmp/
+virtualenv/
+writeup/
+/_crowdin_cache
+/_khanload_cache
+/mergetomaster.sh
+/run_command.*
+/start.*
+/stop.*
+/kalite/*.jpg
+/kalite/*.mp4.part
+/kalite/i18n/data/dubbed_video_mappings.json
+/kalite/updates/data/video_file_sizes.json
+/kalite/kalite-*.zip
+/kalite/local_settings.py
+/kalite/media
+/kalite/temp
+/kalite/private_key.pem
+/kalite/secrets.py
+/kalite/static
+/kalite/i18n/static/js/i18n
+/kalite/ghostdriver.log
+/TAGS
+.tags
+/kalite/i18n/static/
+/.vagrant/
+ghostdriver.log
+*.swp
+file_map.json
